@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/G6SA_Autotest.iml" filepath="$PROJECT_DIR$/G6SA_Autotest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apptest/apptest.iml" filepath="$PROJECT_DIR$/apptest/apptest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/g6p_autotest/g6p_autotest.iml" filepath="$PROJECT_DIR$/g6p_autotest/g6p_autotest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/g6sa_autotest/g6sa_autotest.iml" filepath="$PROJECT_DIR$/g6sa_autotest/g6sa_autotest.iml" />
+    </modules>
+  </component>
+</project>
