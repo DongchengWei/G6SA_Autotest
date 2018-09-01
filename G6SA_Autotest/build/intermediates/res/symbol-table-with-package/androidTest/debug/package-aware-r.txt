@@ -1,0 +1,2 @@
+com.itti.g6sa_autotest.test
+int string app_name 0x7f010000

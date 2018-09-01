@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Users\\uidq0460\\AndroidStudioProjects\\G6SA_Autotest\\G6SA_Autotest\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\uidq0460\\.gradle\\caches\\transforms-1\\files-1.1\\rules-0.5.aar\\40907764637ea263069f983c98b3d393\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "229",
+                        "endColumns": "45",
+                        "endOffsets": "270"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        }
+    ]
+}

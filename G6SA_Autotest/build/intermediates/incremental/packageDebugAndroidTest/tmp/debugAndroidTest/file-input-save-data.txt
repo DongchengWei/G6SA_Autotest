@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sat Sep 01 14:39:35 CST 2018
+0.baseType=DIRECTORY
+0.base=D\:\\Users\\uidq0460\\AndroidStudioProjects\\G6SA_Autotest\\G6SA_Autotest\\build\\intermediates\\transforms\\dexMerger\\androidTest\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

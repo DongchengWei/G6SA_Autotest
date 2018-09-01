@@ -1739,8 +1739,6 @@ public class Actions {
 
         boolean setOk = false;
         for(int i = 0; i< 22 && setOk == false; i++) {
-            UiAutoLibs.clickObject(leftObj);
-            UiAutoLibs.clickObject(bottomObj);
             if (upDownObj.getText().equals("-10") && leftRightObj.getText().equals("-10")) {
                 setOk = true;
             }
