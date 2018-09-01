@@ -1,1 +1,1 @@
-include ':g6sa_autotest', ':g6p_autotest', ':apptest'
+include ':g6sa_autotest'
