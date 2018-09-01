@@ -1,4 +1,0 @@
-#Fri Aug 31 18:09:22 CST 2018
-base.0=D\:\\Users\\uidq0460\\AndroidStudioProjects\\G6SA_Autotest\\G6SA_Autotest\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
