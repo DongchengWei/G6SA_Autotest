@@ -56,16 +56,84 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Tonsen" />
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/MainActivity.java" line="47" />
-    <bookmark url="file://$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/broadcasts/FirstNoticeBroadcast.java" line="13" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="dba8f40d-138f-4b7d-b420-235dd478d998" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/G6SA_Autotest/release/g6sa_autotest-release.apk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/G6SA_Autotest/release/output.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/g6p_autotest/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/apptest.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/proguard-rules.pro" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/androidTest/java/com/itti/apptest/ExampleInstrumentedTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/AndroidManifest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/MainActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/TestFirstActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/TestSecondActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/broadcasts/FirstNoticeBroadcast.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/utils/NotificationUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/drawable/ic_launcher_background.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/layout/activity_test_first.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/layout/activity_test_second.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/values/colors.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/values/strings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/main/res/values/styles.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/apptest/src/test/java/com/itti/apptest/ExampleUnitTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.06.19_13.46.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.07.05_13.56.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.07.07_10.28.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.07.07_10.29.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.07.07_10.30.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.07.09_09.40.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.07.09_09.41.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.08.25_16.00.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.08.25_16.04.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.08.25_16.14.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.08.27_12.15.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.08.27_14.11.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.08.27_14.19.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.08.27_14.20.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.android.settings_2018.08.29_15.52.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.desay_svautomotive.svradio_2018.08.25_16.43.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.desaysv_automotive.svmedia_2018.08.25_16.15.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.desaysv_automotive.svmedia_2018.08.25_16.29.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/captures/com.desaysv_automotive.svmedia_2018.08.25_16.43.li" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/g6p_autotest.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/proguard-rules.pro" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/androidTest/java/com/itti/g6p_autotest/G6P_UiAutomatorTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/AndroidManifest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/drawable/ic_launcher_background.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/values/colors.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/values/strings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/main/res/values/styles.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/g6p_autotest/src/test/java/com/itti/g6p_autotest/ExampleUnitTest.java" afterPath="" />
     </list>
     <ignored path=".idea/" />
     <manually-removed-from-ignored>
@@ -104,7 +172,48 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/G6SA_Autotest/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -5034,11 +5143,6 @@
               <item name="G6SA_Autotest" type="b2602c69:ProjectViewProjectNode" />
               <item name="G6SA_Autotest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="G6SA_Autotest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="G6SA_Autotest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="G6SA_Autotest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -5046,19 +5150,6 @@
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="G6SA_Autotest" type="1abcf292:AndroidViewProjectNode" />
-              <item name="g6p_autotest" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="G6SA_Autotest" type="1abcf292:AndroidViewProjectNode" />
-              <item name="g6sa_autotest" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="G6SA_Autotest" type="1abcf292:AndroidViewProjectNode" />
-              <item name="g6sa_autotest" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
             <path>
               <item name="G6SA_Autotest" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -5096,12 +5187,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
     <property name="device.picker.selection" value="00001234" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="android.project.structure.last.selected" value="Project" />
+    <property name="android.project.structure.last.selected" value="g6p_autotest" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="DEBUGGABLE_DEVICE" value="desaysv-g6sa_r8a77965-00001234" />
     <property name="DEBUGGABLE_PROCESS" value="com.android.settings" />
     <property name="SHOW_ALL_PROCESSES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535782097688" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535783629373" />
     <property name="android.profiler.active" value="true" />
     <property name="ExportApk.ApkPath" value="D:\Users\uidq0460\AndroidStudioProjects\G6SA_Autotest\g6sa_autotest" />
     <property name="ExportApk.Flavors" value="" />
@@ -5137,7 +5228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests._0055_TC_SETUP_006...()">
+  <component name="RunManager" selected="Android Instrumented Tests._0054_TC_SETUP_006...()">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -5958,7 +6049,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535781575010</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;G6SA_Autotest">
+      <created>1535782153750</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1535782153750</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -6011,11 +6109,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19893546" sideWeight="0.57589287" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37526882" sideWeight="0.5618337" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.53091687" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.46908316" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30967742" sideWeight="0.43816632" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.46215352" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3311828" sideWeight="0.41364604" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3311828" sideWeight="0.41364604" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -6325,14 +6423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/G6SA_Autotest/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -6341,50 +6431,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/G6SA_Autotest/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="26" column="90" lean-forward="true" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/g6p_autotest/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="30" column="66" lean-forward="true" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apptest/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/AutoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="546" column="30" lean-forward="false" selection-start-line="546" selection-start-column="30" selection-end-line="546" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -6414,6 +6464,54 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/AutoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="535" column="30" lean-forward="false" selection-start-line="535" selection-start-column="30" selection-end-line="535" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptest/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/G6SA_Autotest/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
