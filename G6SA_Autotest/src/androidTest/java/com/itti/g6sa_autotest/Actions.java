@@ -2418,64 +2418,30 @@ public class Actions {
     public static void btRingtonesCheck() throws UiObjectNotFoundException {
         Actions.turnOnBT(20);
         //com.android.settings:id/rg_bell
-        UiAutoLibs.scrollClassFindObjectById("android.widget.ScrollView", "com.android.settings:id/rg_bell");
-        UiObject ring1Ojb = UiAutoLibs.getUiobjectById("com.android.settings:id/rb_bell_1");
-        UiObject ring2Ojb = UiAutoLibs.getUiobjectById("com.android.settings:id/rb_bell_2");
-        UiObject ring3Ojb = UiAutoLibs.getUiobjectById("com.android.settings:id/rb_bell_3");
-        UiObject ring4Ojb = UiAutoLibs.getUiobjectById("com.android.settings:id/rb_bell_4");
-        UiObject ring5Ojb = UiAutoLibs.getUiobjectById("com.android.settings:id/rb_bell_5");
+        UiAutoLibs.scrollClassFindObjectById("android.widget.ScrollView", "com.android.settings:id/tv_ringtone");
+        UiObject ringOjb = UiAutoLibs.getUiobjectById("com.android.settings:id/tv_ringtone");
 
-        Log.d(TAG, "btRingtonesCheck: default Selected ring = " + "ring1 " + ring1Ojb.isChecked()
-                + ", ring2 " + ring2Ojb.isChecked()+ ", ring3 " + ring3Ojb.isChecked()
-                + ", ring4 " + ring4Ojb.isChecked() + ", ring5 " + ring5Ojb.isChecked());
+        Log.d(TAG, "btRingtonesCheck: default Ringtone = " + ringOjb.getText());
 
-        boolean isOk = false;
-        ring2Ojb.click();
-        if (ring1Ojb.isChecked()==false && ring2Ojb.isChecked()==true && ring3Ojb.isChecked()==false && ring4Ojb.isChecked()==false && ring5Ojb.isChecked()==false){
-            isOk = true;
-        } else {
-            isOk = false;
-            Log.d(TAG, "btRingtonesCheck: more then one ring is selected fail");
-        }
-        assertEquals("assert Ring2", true, isOk);
+        ringOjb.click();//点击弹出选择对话框
+        UiObject selectDialogOjb = UiAutoLibs.getUiobjectById("com.android.settings:id/wallpaper_wheelview");
+        selectDialogOjb.waitForExists(3000);
+        Log.d(TAG, "btRingtonesCheck: seleceDialog exit = " + selectDialogOjb.exists());
+        UiAutoLibs.scrollToEndById("com.android.settings:id/wallpaper_wheelview");
+        UiAutoLibs.clickObject(selectDialogOjb);
+        Log.d(TAG, "btRingtonesCheck: 调到最后一个铃声 = " + ringOjb.getText());
 
-        ring3Ojb.click();
-        if (ring1Ojb.isChecked()==false && ring2Ojb.isChecked()==false && ring3Ojb.isChecked()==true && ring4Ojb.isChecked()==false && ring5Ojb.isChecked()==false){
-            isOk = true;
-        } else {
-            isOk = false;
-            Log.d(TAG, "btRingtonesCheck: more then one ring is selected fail");
-        }
-        assertEquals("assert Ring3", true, isOk);
-
-        ring4Ojb.click();
-        if (ring1Ojb.isChecked()==false && ring2Ojb.isChecked()==false && ring3Ojb.isChecked()==false && ring4Ojb.isChecked()==true && ring5Ojb.isChecked()==false){
-            isOk = true;
-        } else {
-            isOk = false;
-            Log.d(TAG, "btRingtonesCheck: more then one ring is selected fail");
-        }
-        assertEquals("assert Ring4", true, isOk);
-
-        ring5Ojb.click();
-        if (ring1Ojb.isChecked()==false && ring2Ojb.isChecked()==false && ring3Ojb.isChecked()==false && ring4Ojb.isChecked()==false && ring5Ojb.isChecked()==true){
-            isOk = true;
-        } else {
-            isOk = false;
-            Log.d(TAG, "btRingtonesCheck: more then one ring is selected fail");
-        }
-        assertEquals("assert Ring5", true, isOk);
-
-        ring1Ojb.click();
-        if (ring1Ojb.isChecked()==true && ring2Ojb.isChecked()==false && ring3Ojb.isChecked()==false && ring4Ojb.isChecked()==false && ring5Ojb.isChecked()==false){
-            isOk = true;
-        } else {
-            isOk = false;
-            Log.d(TAG, "btRingtonesCheck: more then one ring is selected fail");
-        }
-        assertEquals("assert Ring1", true, isOk);
+        assertEquals("assert 调到最后一个铃声", "Ursaminor", ringOjb.getText());
 
 
+        ringOjb.click();//点击弹出选择对话框
+        selectDialogOjb = UiAutoLibs.getUiobjectById("com.android.settings:id/wallpaper_wheelview");
+        selectDialogOjb.waitForExists(3000);
+        Log.d(TAG, "btRingtonesCheck: seleceDialog exit = " + selectDialogOjb.exists());
+        UiAutoLibs.scrollToBeginById("com.android.settings:id/wallpaper_wheelview");
+        UiAutoLibs.clickObject(selectDialogOjb);
+        Log.d(TAG, "btRingtonesCheck: 调到第一个铃声 = " + ringOjb.getText());
+        assertEquals("assert 调到第一个铃声", "Orion", ringOjb.getText());
     }
 
     public static void dualBtSwitchCheck() throws UiObjectNotFoundException {
@@ -2673,142 +2639,25 @@ public class Actions {
 
     public static void voicePronunciationPeopleCheck() throws UiObjectNotFoundException {
         UiAutoLibs.scrollIdFindObjectById("com.android.settings:id/scrollview", "com.android.settings:id/voice_person");
-        UiAutoLibs.clickById("com.android.settings:id/voice_person");
+        UiObject peopleSelectedObj = UiAutoLibs.getUiobjectById("com.android.settings:id/speaker_name");
+        String defaultPeopleStr = peopleSelectedObj.getText();
+        Log.d(TAG, "voicePronunciationPeopleCheck: default people默认人名 = " + defaultPeopleStr);
 
-        //默认值
-        UiObject jiaJiaOjb = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_jiajia");
-        UiObject xiaoYanObj = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_xiaoyan");
-        UiObject xiaoJieObj = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_xiaojie");
+        peopleSelectedObj.click();
+        UiObject peopleObj = UiAutoLibs.getUiobjectById("com.android.settings:id/wallpaper_wheelview");
+        peopleObj.waitForExists(3000);
+        UiAutoLibs.scrollToEndById("com.android.settings:id/wallpaper_wheelview");
+        peopleObj.click();
+        Log.d(TAG, "voicePronunciationPeopleCheck: 最后一个人名 = " + peopleSelectedObj.getText());
+        String lastObjStr = peopleSelectedObj.getText();;
 
-        UiObject xiaoXueObj = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_xiaoxue");
-        UiObject xiaoLingObj = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_xiaolin");
-        UiObject xiaofengObj = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_xiaofeng");
-
-        UiObject yiFengObj = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_yifeng");
-        UiObject nanNanObj = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_nannan");
-        UiObject fangFangObj = UiAutoLibs.getUiobjectById("com.android.settings:id/sv_tab_fangfang");
-
-        int selectCounter = 0;
-        String defaultStr = "default people selected = ";
-        if (jiaJiaOjb.isChecked()){
-            selectCounter ++;
-            defaultStr += "jiajia " + jiaJiaOjb.isChecked();
-        }
-        if (xiaoYanObj.isChecked()){
-            selectCounter ++;
-            defaultStr += "xiaoYanObj " + xiaoYanObj.isChecked();
-        }
-        if (xiaoJieObj.isChecked()){
-            selectCounter ++;
-            defaultStr += "xiaoJieObj " + xiaoJieObj.isChecked();
-        }
-        if (xiaoXueObj.isChecked()){
-            selectCounter ++;
-            defaultStr += "xiaoXueObj " + xiaoXueObj.isChecked();
-        }
-        if (xiaoLingObj.isChecked()){
-            selectCounter ++;
-            defaultStr += "xiaoLingObj " + xiaoLingObj.isChecked();
-        }
-        if (xiaofengObj.isChecked()){
-            selectCounter ++;
-            defaultStr += "xiaofengObj " + xiaofengObj.isChecked();
-        }
-        if (yiFengObj.isChecked()){
-            selectCounter ++;
-            defaultStr += "yiFengObj " + yiFengObj.isChecked();
-        }
-        if (nanNanObj.isChecked()){
-            selectCounter ++;
-            defaultStr += "nanNanObj " + nanNanObj.isChecked();
-        }
-        if (fangFangObj.isChecked()){
-            selectCounter ++;
-            defaultStr += "fangFangObj " + fangFangObj.isChecked();
-        }
-        assertEquals("assert voice people selected", 1, selectCounter);
-
-        xiaoYanObj.click();
-        boolean isOk = false;
-        if (jiaJiaOjb.isChecked()==false && xiaoYanObj.isChecked()==true && xiaoJieObj.isChecked()==false
-                && xiaoXueObj.isChecked()==false && xiaoLingObj.isChecked()==false && xiaofengObj.isChecked()==false
-                && yiFengObj.isChecked()==false && nanNanObj.isChecked()==false && fangFangObj.isChecked()==false){
-            isOk = true;
-        }
-        assertEquals("assert xiaoyan", true, isOk);
-
-        xiaoJieObj.click();
-        isOk = false;
-        if (jiaJiaOjb.isChecked()==false && xiaoYanObj.isChecked()==false && xiaoJieObj.isChecked()==true
-                && xiaoXueObj.isChecked()==false && xiaoLingObj.isChecked()==false && xiaofengObj.isChecked()==false
-                && yiFengObj.isChecked()==false && nanNanObj.isChecked()==false && fangFangObj.isChecked()==false){
-            isOk = true;
-        }
-        assertEquals("assert xiaoJieObj", true, isOk);
-
-        xiaoXueObj.click();
-        isOk = false;
-        if (jiaJiaOjb.isChecked()==false && xiaoYanObj.isChecked()==false && xiaoJieObj.isChecked()==false
-                && xiaoXueObj.isChecked()==true && xiaoLingObj.isChecked()==false && xiaofengObj.isChecked()==false
-                && yiFengObj.isChecked()==false && nanNanObj.isChecked()==false && fangFangObj.isChecked()==false){
-            isOk = true;
-        }
-        assertEquals("assert xiaoXueObj", true, isOk);
-
-        xiaoLingObj.click();
-        isOk = false;
-        if (jiaJiaOjb.isChecked()==false && xiaoYanObj.isChecked()==false && xiaoJieObj.isChecked()==false
-                && xiaoXueObj.isChecked()==false && xiaoLingObj.isChecked()==true && xiaofengObj.isChecked()==false
-                && yiFengObj.isChecked()==false && nanNanObj.isChecked()==false && fangFangObj.isChecked()==false){
-            isOk = true;
-        }
-        assertEquals("assert xiaoLingObj", true, isOk);
-
-        xiaofengObj.click();
-        isOk = false;
-        if (jiaJiaOjb.isChecked()==false && xiaoYanObj.isChecked()==false && xiaoJieObj.isChecked()==false
-                && xiaoXueObj.isChecked()==false && xiaoLingObj.isChecked()==false && xiaofengObj.isChecked()==true
-                && yiFengObj.isChecked()==false && nanNanObj.isChecked()==false && fangFangObj.isChecked()==false){
-            isOk = true;
-        }
-        assertEquals("assert xiaofengObj", true, isOk);
-
-        yiFengObj.click();
-        isOk = false;
-        if (jiaJiaOjb.isChecked()==false && xiaoYanObj.isChecked()==false && xiaoJieObj.isChecked()==false
-                && xiaoXueObj.isChecked()==false && xiaoLingObj.isChecked()==false && xiaofengObj.isChecked()==false
-                && yiFengObj.isChecked()==true && nanNanObj.isChecked()==false && fangFangObj.isChecked()==false){
-            isOk = true;
-        }
-        assertEquals("assert yiFengObj", true, isOk);
-
-        nanNanObj.click();
-        isOk = false;
-        if (jiaJiaOjb.isChecked()==false && xiaoYanObj.isChecked()==false && xiaoJieObj.isChecked()==false
-                && xiaoXueObj.isChecked()==false && xiaoLingObj.isChecked()==false && xiaofengObj.isChecked()==false
-                && yiFengObj.isChecked()==false && nanNanObj.isChecked()==true && fangFangObj.isChecked()==false){
-            isOk = true;
-        }
-        assertEquals("assert nanNanObj", true, isOk);
-
-        fangFangObj.click();
-        isOk = false;
-        if (jiaJiaOjb.isChecked()==false && xiaoYanObj.isChecked()==false && xiaoJieObj.isChecked()==false
-                && xiaoXueObj.isChecked()==false && xiaoLingObj.isChecked()==false && xiaofengObj.isChecked()==false
-                && yiFengObj.isChecked()==false && nanNanObj.isChecked()==false && fangFangObj.isChecked()==true){
-            isOk = true;
-        }
-        assertEquals("assert fangFangObj", true, isOk);
-
-        jiaJiaOjb.click();
-        isOk = false;
-        if (jiaJiaOjb.isChecked()==true && xiaoYanObj.isChecked()==false && xiaoJieObj.isChecked()==false
-                && xiaoXueObj.isChecked()==false && xiaoLingObj.isChecked()==false && xiaofengObj.isChecked()==false
-                && yiFengObj.isChecked()==false && nanNanObj.isChecked()==false && fangFangObj.isChecked()==false){
-            isOk = true;
-        }
-        assertEquals("assert jiaJiaOjb", true, isOk);
-
+        peopleSelectedObj.click();
+        peopleObj = UiAutoLibs.getUiobjectById("com.android.settings:id/wallpaper_wheelview");
+        peopleObj.waitForExists(3000);
+        UiAutoLibs.scrollToBeginById("com.android.settings:id/wallpaper_wheelview");
+        peopleObj.click();
+        Log.d(TAG, "voicePronunciationPeopleCheck: 第一个人名 = " + peopleSelectedObj.getText());
+        assertEquals("断言最后一个人名和第一个人名不一样", false, peopleSelectedObj.getText().equals(lastObjStr));
     }
 
     public static void systemMessagePushSwitchCheck() throws UiObjectNotFoundException {

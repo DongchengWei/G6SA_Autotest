@@ -58,6 +58,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba8f40d-138f-4b7d-b420-235dd478d998" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/captures/com.android.settings_2018.09.03_15.22.li" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/captures/com.android.settings_2018.09.03_15.23.li" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/captures/com.android.settings_2018.09.03_16.30.li" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/captures/com.android.settings_2018.09.03_16.34.li" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/captures/com.android.settings_2018.09.03_17.49.li" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
@@ -68,12 +74,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/classes/androidTest/debug/com/itti/g6sa_autotest/Actions.class" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/classes/androidTest/debug/com/itti/g6sa_autotest/Actions.class" />
+      <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/classes/androidTest/debug/com/itti/g6sa_autotest/AutoTest.class" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/classes/androidTest/debug/com/itti/g6sa_autotest/AutoTest.class" />
+      <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/classes/androidTest/debug/com/itti/g6sa_autotest/UiAutoLibs.class" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/classes/androidTest/debug/com/itti/g6sa_autotest/UiAutoLibs.class" />
       <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/incremental/packageDebugAndroidTest/tmp/debugAndroidTest/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/incremental/packageDebugAndroidTest/tmp/debugAndroidTest/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexBuilder/androidTest/debug/14/com/itti/g6sa_autotest/Actions.dex" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexBuilder/androidTest/debug/14/com/itti/g6sa_autotest/Actions.dex" />
+      <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexBuilder/androidTest/debug/14/com/itti/g6sa_autotest/AutoTest.dex" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexBuilder/androidTest/debug/14/com/itti/g6sa_autotest/AutoTest.dex" />
+      <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexBuilder/androidTest/debug/14/com/itti/g6sa_autotest/UiAutoLibs.dex" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexBuilder/androidTest/debug/14/com/itti/g6sa_autotest/UiAutoLibs.dex" />
       <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexMerger/androidTest/debug/0/classes.dex" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexMerger/androidTest/debug/0/classes.dex" />
       <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexMerger/androidTest/debug/__content__.json" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/intermediates/transforms/dexMerger/androidTest/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/G6SA_Autotest/build/outputs/apk/androidTest/debug/g6sa_autotest-debug-androidTest.apk" afterPath="$PROJECT_DIR$/G6SA_Autotest/build/outputs/apk/androidTest/debug/g6sa_autotest-debug-androidTest.apk" />
       <change beforePath="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/Actions.java" afterPath="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/Actions.java" />
+      <change beforePath="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/AutoTest.java" afterPath="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/AutoTest.java" />
+      <change beforePath="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/UiAutoLibs.java" afterPath="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/UiAutoLibs.java" />
     </list>
     <ignored path=".idea/" />
     <manually-removed-from-ignored>
@@ -116,18 +128,38 @@
       <file leaf-file-name="AutoTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/AutoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="161" column="34" lean-forward="false" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="34" />
+            <state relative-caret-position="152">
+              <caret line="479" column="5" lean-forward="true" selection-start-line="479" selection-start-column="5" selection-end-line="479" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Actions.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="G6SA_Pressure.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/G6SA_Pressure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="82" column="76" lean-forward="false" selection-start-line="82" selection-start-column="76" selection-end-line="82" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Actions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/Actions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2151">
-              <caret line="1942" column="79" lean-forward="true" selection-start-line="1942" selection-start-column="79" selection-end-line="1942" selection-end-column="79" />
+            <state relative-caret-position="178">
+              <caret line="2632" column="42" lean-forward="true" selection-start-line="2632" selection-start-column="42" selection-end-line="2632" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UiAutoLibs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/UiAutoLibs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="69" column="36" lean-forward="false" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -3520,15 +3552,17 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/G6SA_Autotest/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/UiAutoLibs.java" />
+        <option value="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/AutoTest.java" />
         <option value="$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/Actions.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="470" />
-    <option name="y" value="6" />
-    <option name="width" value="1029" />
-    <option name="height" value="975" />
+    <option name="x" value="191" />
+    <option name="y" value="4" />
+    <option name="width" value="1294" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -3547,6 +3581,18 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="G6SA_Autotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="G6SA_Autotest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -3563,18 +3609,6 @@
               <item name="G6SA_Autotest" type="58d84e3e:PackageViewProjectNode" />
               <item name="g6sa_autotest" type="616d4139:PackageViewModuleNode" />
               <item name="com.itti.g6sa_autotest" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="G6SA_Autotest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="G6SA_Autotest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -3614,7 +3648,7 @@
     <property name="DEBUGGABLE_DEVICE" value="desaysv-g6sa_r8a77965-00001234" />
     <property name="DEBUGGABLE_PROCESS" value="com.android.settings" />
     <property name="SHOW_ALL_PROCESSES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535948092956" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535969129996" />
     <property name="android.profiler.active" value="true" />
     <property name="ExportApk.ApkPath" value="D:\Users\uidq0460\AndroidStudioProjects\G6SA_Autotest\g6sa_autotest" />
     <property name="ExportApk.Flavors" value="" />
@@ -3650,7 +3684,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests._0015_TC_SETUP_002...()">
+  <component name="RunManager" selected="Android Instrumented Tests._0045_TC_SETUP_005...()">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -3906,11 +3940,11 @@
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" />
       </method>
     </configuration>
-    <configuration name="_0009_TC_SETUP_001...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+    <configuration name="_0032_TC_SETUP_004...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
       <module name="g6sa_autotest" />
       <option name="TESTING_TYPE" value="3" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="_0009_TC_SETUP_0013_nightBrightnessModeCheck" />
+      <option name="METHOD_NAME" value="_0032_TC_SETUP_0042_systemVersionInformation" />
       <option name="CLASS_NAME" value="com.itti.g6sa_autotest.AutoTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="EXTRA_OPTIONS" value="" />
@@ -3950,11 +3984,11 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
     </configuration>
-    <configuration name="_0013_TC_SETUP_001...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+    <configuration name="_0033_TC_SETUP_004...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
       <module name="g6sa_autotest" />
       <option name="TESTING_TYPE" value="3" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="_0013_TC_SETUP_0016_drivingLockScreenCheck" />
+      <option name="METHOD_NAME" value="_0033_TC_SETUP_0046_btNameCheck" />
       <option name="CLASS_NAME" value="com.itti.g6sa_autotest.AutoTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="EXTRA_OPTIONS" value="" />
@@ -3994,11 +4028,11 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
     </configuration>
-    <configuration name="_0015_TC_SETUP_002...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+    <configuration name="_0034_TC_SETUP_004...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
       <module name="g6sa_autotest" />
       <option name="TESTING_TYPE" value="3" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="_0015_TC_SETUP_0029_turnOffDTS" />
+      <option name="METHOD_NAME" value="_0034_TC_SETUP_0047_btSwitchCheck" />
       <option name="CLASS_NAME" value="com.itti.g6sa_autotest.AutoTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="EXTRA_OPTIONS" value="" />
@@ -4038,11 +4072,11 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
     </configuration>
-    <configuration name="_0054_TC_SETUP_006...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+    <configuration name="_0036_TC_SETUP_004...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
       <module name="g6sa_autotest" />
       <option name="TESTING_TYPE" value="3" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="_0054_TC_SETUP_0063_wifiConnectNeedPassword" />
+      <option name="METHOD_NAME" value="_0036_TC_SETUP_0049_btRingtonesCheck" />
       <option name="CLASS_NAME" value="com.itti.g6sa_autotest.AutoTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="EXTRA_OPTIONS" value="" />
@@ -4082,11 +4116,11 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
     </configuration>
-    <configuration name="_0055_TC_SETUP_006...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+    <configuration name="_0045_TC_SETUP_005...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
       <module name="g6sa_autotest" />
       <option name="TESTING_TYPE" value="3" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="_0055_TC_SETUP_0065_wifiPasswordWidthCheck" />
+      <option name="METHOD_NAME" value="_0045_TC_SETUP_0057_voicePronunciationPeopleCheck" />
       <option name="CLASS_NAME" value="com.itti.g6sa_autotest.AutoTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="EXTRA_OPTIONS" value="" />
@@ -4350,19 +4384,19 @@
       <item index="1" class="java.lang.String" itemvalue="Android App.g6p_autotest" />
       <item index="2" class="java.lang.String" itemvalue="Android App.g6sa_autotest" />
       <item index="3" class="java.lang.String" itemvalue="Android App.apptest" />
-      <item index="4" class="java.lang.String" itemvalue="Android Instrumented Tests._0009_TC_SETUP_001...()" />
-      <item index="5" class="java.lang.String" itemvalue="Android Instrumented Tests._0055_TC_SETUP_006...()" />
-      <item index="6" class="java.lang.String" itemvalue="Android Instrumented Tests._0054_TC_SETUP_006...()" />
-      <item index="7" class="java.lang.String" itemvalue="Android Instrumented Tests._0013_TC_SETUP_001...()" />
-      <item index="8" class="java.lang.String" itemvalue="Android Instrumented Tests._0015_TC_SETUP_002...()" />
+      <item index="4" class="java.lang.String" itemvalue="Android Instrumented Tests._0034_TC_SETUP_004...()" />
+      <item index="5" class="java.lang.String" itemvalue="Android Instrumented Tests._0033_TC_SETUP_004...()" />
+      <item index="6" class="java.lang.String" itemvalue="Android Instrumented Tests._0032_TC_SETUP_004...()" />
+      <item index="7" class="java.lang.String" itemvalue="Android Instrumented Tests._0036_TC_SETUP_004...()" />
+      <item index="8" class="java.lang.String" itemvalue="Android Instrumented Tests._0045_TC_SETUP_005...()" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Android Instrumented Tests._0015_TC_SETUP_002...()" />
-        <item index="1" class="java.lang.String" itemvalue="Android Instrumented Tests._0013_TC_SETUP_001...()" />
-        <item index="2" class="java.lang.String" itemvalue="Android Instrumented Tests._0054_TC_SETUP_006...()" />
-        <item index="3" class="java.lang.String" itemvalue="Android Instrumented Tests._0055_TC_SETUP_006...()" />
-        <item index="4" class="java.lang.String" itemvalue="Android Instrumented Tests._0009_TC_SETUP_001...()" />
+        <item index="0" class="java.lang.String" itemvalue="Android Instrumented Tests._0045_TC_SETUP_005...()" />
+        <item index="1" class="java.lang.String" itemvalue="Android Instrumented Tests._0036_TC_SETUP_004...()" />
+        <item index="2" class="java.lang.String" itemvalue="Android Instrumented Tests._0034_TC_SETUP_004...()" />
+        <item index="3" class="java.lang.String" itemvalue="Android Instrumented Tests._0033_TC_SETUP_004...()" />
+        <item index="4" class="java.lang.String" itemvalue="Android Instrumented Tests._0032_TC_SETUP_004...()" />
       </list>
     </recent_temporary>
   </component>
@@ -4499,39 +4533,46 @@
       <option name="project" value="LOCAL" />
       <updated>1535787313886</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add Ua2junit.jar">
+      <created>1535960488955</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1535960488955</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_0013_TC_SETUP_001___() - 2018.09.03 at 12h 10m 07s.xml">
-      <configuration name="_0013_TC_SETUP_001...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0036_TC_SETUP_004___() - 2018.09.03 at 16h 49m 39s.xml">
+      <configuration name="_0036_TC_SETUP_004...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0015_TC_SETUP_002___() - 2018.09.03 at 12h 13m 38s.xml">
-      <configuration name="_0015_TC_SETUP_002...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0036_TC_SETUP_004___() - 2018.09.03 at 16h 56m 08s.xml">
+      <configuration name="_0036_TC_SETUP_004...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0054_TC_SETUP_006___() - 2018.09.03 at 12h 09m 20s.xml">
-      <configuration name="_0054_TC_SETUP_006...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0036_TC_SETUP_004___() - 2018.09.03 at 16h 57m 18s.xml">
+      <configuration name="_0036_TC_SETUP_004...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0055_TC_SETUP_006___() - 2018.08.31 at 17h 04m 39s.xml">
-      <configuration name="_0055_TC_SETUP_006...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0036_TC_SETUP_004___() - 2018.09.03 at 17h 00m 37s.xml">
+      <configuration name="_0036_TC_SETUP_004...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0055_TC_SETUP_006___() - 2018.08.31 at 17h 05m 52s.xml">
-      <configuration name="_0055_TC_SETUP_006...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0036_TC_SETUP_004___() - 2018.09.03 at 17h 23m 23s.xml">
+      <configuration name="_0036_TC_SETUP_004...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0055_TC_SETUP_006___() - 2018.08.31 at 17h 07m 08s.xml">
-      <configuration name="_0055_TC_SETUP_006...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0036_TC_SETUP_004___() - 2018.09.03 at 17h 41m 44s.xml">
+      <configuration name="_0036_TC_SETUP_004...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0055_TC_SETUP_006___() - 2018.08.31 at 17h 12m 59s.xml">
-      <configuration name="_0055_TC_SETUP_006...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0036_TC_SETUP_004___() - 2018.09.03 at 17h 42m 37s.xml">
+      <configuration name="_0036_TC_SETUP_004...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0055_TC_SETUP_006___() - 2018.08.31 at 18h 10m 06s.xml">
-      <configuration name="_0055_TC_SETUP_006...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0036_TC_SETUP_004___() - 2018.09.03 at 17h 44m 43s.xml">
+      <configuration name="_0036_TC_SETUP_004...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0055_TC_SETUP_006___() - 2018.09.01 at 12h 45m 50s.xml">
-      <configuration name="_0055_TC_SETUP_006...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0045_TC_SETUP_005___() - 2018.09.03 at 17h 59m 37s.xml">
+      <configuration name="_0045_TC_SETUP_005...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="_0055_TC_SETUP_006___() - 2018.09.01 at 13h 00m 27s.xml">
-      <configuration name="_0055_TC_SETUP_006...()" configurationId="AndroidTestRunConfigurationType" />
+    <history-entry file="_0045_TC_SETUP_005___() - 2018.09.03 at 18h 02m 08s.xml">
+      <configuration name="_0045_TC_SETUP_005...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -4553,21 +4594,21 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19893546" sideWeight="0.57589287" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2860215" sideWeight="0.5879531" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11075269" sideWeight="0.4360341" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12580645" sideWeight="0.4360341" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.46908316" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.46215352" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2860215" sideWeight="0.4120469" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44623655" sideWeight="0.4120469" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.42410713" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.42410713" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3935484" sideWeight="0.3251599" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Android WiFi ADB" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17217484" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="373" y="434" width="470" height="556" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4635,30 +4676,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/g6sa_autotest/src/androidTest/java/com/itti/g6sa_autotest/Actions.java</url>
-          <line>2550</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/TestSecondActivity.java" />
-    <entry file="file://$PROJECT_DIR$/apptest/src/main/res/layout/activity_test_first.xml" />
-    <entry file="file://$PROJECT_DIR$/apptest/src/main/res/layout/activity_test_second.xml" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/apptest/MainActivity.java" />
     <entry file="file://$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/apptest/broadcasts/FirstNoticeBroadcast.java" />
     <entry file="file://$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/apptest/TestFirstActivity.java" />
     <entry file="file://$PROJECT_DIR$/apptest/src/main/java/com/itti/apptest/apptest/com/itti/apptest/utils/NotificationUtil.java" />
@@ -4705,24 +4727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/G6SA_Pressure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5206">
-          <caret line="295" column="28" lean-forward="false" selection-start-line="295" selection-start-column="28" selection-end-line="295" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/UiAutoLibs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="86" column="71" lean-forward="false" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -4780,7 +4788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4788,7 +4795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4796,7 +4802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4804,7 +4809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4820,7 +4824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4832,18 +4835,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/captures/com.android.settings_2018.09.03_15.22.li">
+      <provider selected="true" editor-type-id="capture-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/com.android.settings_2018.09.03_15.23.li">
+      <provider selected="true" editor-type-id="capture-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/com.android.settings_2018.09.03_16.34.li">
+      <provider selected="true" editor-type-id="capture-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/UiAutoLibs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="69" column="36" lean-forward="false" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/com.android.settings_2018.09.03_17.49.li">
+      <provider selected="true" editor-type-id="capture-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/com.android.settings_2018.09.03_16.30.li">
+      <provider selected="true" editor-type-id="capture-editor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/AutoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="161" column="34" lean-forward="false" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="34" />
+        <state relative-caret-position="152">
+          <caret line="479" column="5" lean-forward="true" selection-start-line="479" selection-start-column="5" selection-end-line="479" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/Actions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2151">
-          <caret line="1942" column="79" lean-forward="true" selection-start-line="1942" selection-start-column="79" selection-end-line="1942" selection-end-column="79" />
+        <state relative-caret-position="178">
+          <caret line="2632" column="42" lean-forward="true" selection-start-line="2632" selection-start-column="42" selection-end-line="2632" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/G6SA_Autotest/src/androidTest/java/com/itti/g6sa_autotest/G6SA_Pressure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="82" column="76" lean-forward="false" selection-start-line="82" selection-start-column="76" selection-end-line="82" selection-end-column="76" />
           <folding />
         </state>
       </provider>

@@ -387,7 +387,7 @@ public class AutoTest {
         Actions.btSwitchCheck();
     }
     /**
-     * 蓝牙自动连接检查,需求已改，待修改
+     * 蓝牙自动连接检查
      * */
     @Test
     public void _0035_TC_SETUP_0048_btAutoConnectSwitchCheck() throws Exception {

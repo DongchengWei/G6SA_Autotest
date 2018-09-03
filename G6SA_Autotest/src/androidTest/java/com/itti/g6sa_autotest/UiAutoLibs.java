@@ -44,6 +44,12 @@ public class UiAutoLibs {
         uiScrollable.scrollIntoView(new UiSelector().resourceId(findObjIdStr));
         SystemClock.sleep(delayTime);
     }
+    public static void scrollIdFindObjectByText(String strId, String findObjIdStr) throws UiObjectNotFoundException {//android.widget.ScrollView
+        UiScrollable uiScrollable = new UiScrollable(new UiSelector().resourceId(strId));
+        uiScrollable.setMaxSearchSwipes(50);
+        uiScrollable.scrollIntoView(new UiSelector().resourceId(findObjIdStr));
+        SystemClock.sleep(delayTime);
+    }
     public static void scrollClassFindObjectById(String classNameStr, String findObjIdStr) throws UiObjectNotFoundException {//android.widget.ScrollView
         UiScrollable uiScrollable = new UiScrollable(new UiSelector().className(classNameStr));
         uiScrollable.setMaxSearchSwipes(50);
@@ -59,6 +65,11 @@ public class UiAutoLibs {
     public static void scrollToBeginById(String str) throws UiObjectNotFoundException {//android.widget.ScrollView
         UiScrollable uiScrollable = new UiScrollable(new UiSelector().resourceId(str));
         uiScrollable.scrollToBeginning(50);
+        SystemClock.sleep(delayTime);
+    }
+    public static void scrollToEndById(String idStr) throws UiObjectNotFoundException {//android.widget.ScrollView
+        UiScrollable uiScrollable = new UiScrollable(new UiSelector().resourceId(idStr));
+        uiScrollable.scrollToEnd(10);
         SystemClock.sleep(delayTime);
     }
     public static void scrollToEndByClassName(String str) throws UiObjectNotFoundException {//android.widget.ScrollView
