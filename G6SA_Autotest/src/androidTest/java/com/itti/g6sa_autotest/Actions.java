@@ -1115,6 +1115,21 @@ public class Actions {
         }
         assertEquals("Change 12H mode assert", true, isOk);
 
+        //界面切换
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        if (timeDisplayObj.getText().contains("AM") || timeDisplayObj.getText().contains("PM")){
+            isOk = true;
+        } else if (timeDisplayObj.getText().contains("上午") || timeDisplayObj.getText().contains("下午")){
+            isOk = true;
+        } else {
+            Log.d(TAG, "timeModeChange: Change to 12H mode fail");
+            isOk = false;
+        }
+        assertEquals("assert 12H mode after switch page", true, isOk);
+
 
         timeMode24Btn.click();
         timeDisplayObj =  mUiDevice .findObject(new UiSelector()
@@ -1128,6 +1143,21 @@ public class Actions {
             isOk = false;
         }
         assertEquals("Change 24H mode assert", true, isOk);
+
+        //界面切换
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        if (!timeDisplayObj.getText().contains("AM") && !timeDisplayObj.getText().contains("PM")
+                && !timeDisplayObj.getText().contains("上午")
+                && !timeDisplayObj.getText().contains("下午")){
+            isOk = true;
+        } else {
+            Log.d(TAG, "timeModeChange: Change to 24H mode fail");
+            isOk = false;
+        }
+        assertEquals("assert 24H mode after switch page", true, isOk);
 
     }
 
@@ -1333,6 +1363,13 @@ public class Actions {
         }
         assertEquals("gps on assert", true, gpsSwitchObj.isChecked());
 
+        //界面切换
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        assertEquals("gps on assert", true, gpsSwitchObj.isChecked());
+
         //检查时间可否调节
         UiObject timeSettingsOjb = mUiDevice.findObject(new UiSelector()
                 .resourceId("com.android.settings:id/time_settings"));
@@ -1450,6 +1487,14 @@ public class Actions {
         Log.d(TAG, "dayModeCheck: Day 7 brightnessValue = " + brightnessValueObj.getText());
         assertEquals("Assert 7" , "7", brightnessValueObj.getText());
 
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        assertEquals("assert Day mode is Selected", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_day"));
+        assertEquals("Assert 7 after switch pages" , "7", brightnessValueObj.getText());
     }
 
     public static void nightModeCheck() throws UiObjectNotFoundException {
@@ -1474,6 +1519,14 @@ public class Actions {
         mUiDevice.click(703,461);
         Log.d(TAG, "nightModeCheck: Night 3 brightnessValue = " + brightnessValueObj.getText());
         assertEquals("Assert 3" , "3", brightnessValueObj.getText());
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        assertEquals("assert Night mode is Selected", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_night"));
+        assertEquals("Assert 3 after switch pages" , "3", brightnessValueObj.getText());
 
     }
     public static void autoModeCheck() throws UiObjectNotFoundException {
@@ -1506,12 +1559,20 @@ public class Actions {
         }
         UiAutoLibs.clickById("com.android.settings:id/sv_tab_auto");
         assertEquals("assert auto", true, isOK);
+
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        assertEquals("assert Night mode is Selected", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_auto"));
+        assertEquals("Assert 3 after switch pages" , true, brightnessValueObj.getText().equals(autoValueStr));
     }
 
     public static void themeSettings() throws UiObjectNotFoundException {
         //滚动到底部
         UiAutoLibs.scrollToEndByClassName("android.widget.ScrollView");
-
 
         //选择魔幻
         UiAutoLibs.clickById("com.android.settings:id/sv_tab_magic");
@@ -1522,6 +1583,15 @@ public class Actions {
         assertEquals("assert magic selected", true,
                 UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_magic"));
 
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        UiAutoLibs.scrollToEndByClassName("android.widget.ScrollView");
+        assertEquals("assert magic selected after switch pages", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_magic"));
+
         //选择经典
         UiAutoLibs.clickById("com.android.settings:id/sv_tab_classic");
         //断言5秒内界面仍保持在显示设置不闪退，且经典被选中
@@ -1530,12 +1600,19 @@ public class Actions {
                 classicObj.waitUntilGone(5000));
         assertEquals("assert classic selected", true,
                 UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_classic"));
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        UiAutoLibs.scrollToEndByClassName("android.widget.ScrollView");
+        assertEquals("assert classic selected after switch pages", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_classic"));
     }
 
     public static void colorSettings() throws UiObjectNotFoundException {
         //滚动到底部
         UiAutoLibs.scrollToEndByClassName("android.widget.ScrollView");
-
 
         //选择魔幻
         UiAutoLibs.clickById("com.android.settings:id/sv_tab_magic");
@@ -1567,7 +1644,16 @@ public class Actions {
         assertEquals("assert blue selected", true,
                 UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_blue"));
 
-
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        UiAutoLibs.scrollToEndByClassName("android.widget.ScrollView");
+        assertEquals("assert classic selected after switch pages", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_magic"));
+        assertEquals("assert blue selected after switch pages", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_blue"));
 
         //选择经典
         UiAutoLibs.clickById("com.android.settings:id/sv_tab_classic");
@@ -1606,10 +1692,24 @@ public class Actions {
         UiAutoLibs.clickById("com.android.settings:id/sv_tab_off");
         assertEquals("assert 15km selected", true,
                 UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_off"));
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        assertEquals("assert 15km selected", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_off"));
 
         //选择0km
         UiAutoLibs.clickById("com.android.settings:id/sv_tab_0km");
         assertEquals("assert okm selected", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_0km"));
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.DISPLAY_TAB_SETTINGS);
+        assertEquals("assert 15km selected", true,
                 UiAutoLibs.isCheckById("com.android.settings:id/sv_tab_0km"));
 
         //15km
@@ -1633,6 +1733,16 @@ public class Actions {
         assertEquals("assert 15km selected", true,
                 UiAutoLibs.isCheckById("com.android.settings:id/DTCS_sound"));
 
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.SOUND_TAB_SETTINGS);
+        UiAutoLibs.clickById("com.android.settings:id/sound_effects");
+        //滚动到顶部
+        UiAutoLibs.scrollToBeginById("com.android.settings:id/id_scrollView");
+        assertEquals("assert DTS keep ON", true,
+                UiAutoLibs.isCheckById("com.android.settings:id/DTCS_sound"));
 
         //打开DTS后高中低音应被禁用
         UiObject lowSeekOjb = UiAutoLibs.getUiobjectById("com.android.settings:id/low_seekbar");
@@ -1686,6 +1796,16 @@ public class Actions {
         assertEquals("assert 15km selected", false,
                 UiAutoLibs.isCheckById("com.android.settings:id/DTCS_sound"));
 
+        //界面切换
+        Actions.intoSettingsTab(Actions.TIME_TAB_SETTINGS);
+        mUiDevice.pressHome();
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.SOUND_TAB_SETTINGS);
+        UiAutoLibs.clickById("com.android.settings:id/sound_effects");
+        //滚动到顶部
+        UiAutoLibs.scrollToBeginById("com.android.settings:id/id_scrollView");
+        assertEquals("assert DTS keep OFF", false,
+                UiAutoLibs.isCheckById("com.android.settings:id/DTCS_sound"));
 
         //打开DTS后高中低音应被禁用
         UiObject lowSeekOjb = UiAutoLibs.getUiobjectById("com.android.settings:id/low_seekbar");
