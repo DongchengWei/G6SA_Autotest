@@ -8,6 +8,7 @@ import android.support.test.runner.AndroidJUnit4;
 import android.support.test.uiautomator.UiDevice;
 
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
@@ -23,7 +24,45 @@ public class AutoTest {
     public static Context appContext = InstrumentationRegistry.getTargetContext();
     public static Bundle bundle = InstrumentationRegistry.getArguments();//获取参数
 
-
+//    @Before
+//    public void setUp(){
+//        mUiDevice.registerWatcher("crashHomeWatch", crashHomeWatch);
+//        Log.d(TAG, "setUp: registerWatcher");
+//    }
+//
+//    @After
+//    public void tearDown() {
+//        mUiDevice.removeWatcher("crashHomeWatch");
+//        Log.d(TAG, "tearDown: removeWatcher");
+//    }
+//
+//    private final UiWatcher crashHomeWatch = new UiWatcher() {
+//        public boolean checkForCondition() {
+//            UiObject appsObj = mUiDevice.findObject(new UiSelector().description("Apps"));
+//            UiObject appsChObj = mUiDevice.findObject(new UiSelector().description("应用"));
+//            UiObject cancelObj = mUiDevice.findObject(new UiSelector().textContains("取消"));
+//            if (appsObj.exists() || appsChObj.exists()) {
+//                Log.d(TAG, "checkForCondition: Crash to home");
+//                Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+//                try {
+//                    Actions.intoSettingsTab(Actions.WIFI_TAB_SETTINGS);
+//                } catch (UiObjectNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//                return true;
+//            } else if (cancelObj.exists()){
+//                Log.d(TAG, "checkForCondition: cancelButtonExists");
+//                try {
+//                    cancelObj.click();
+//                } catch (UiObjectNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//                return true;
+//            } else {
+//                return false;
+//            }
+//        }
+//    };
     /**
      * 时间制式检查，是否有12小时和24小时制
      * */
@@ -93,6 +132,7 @@ public class AutoTest {
     /**
      * 白天模式切换
      * */
+    @Ignore
     @Test
     public void _0008_TC_SETUP_0012_dayBrightnessModeCheck() throws Exception {
         Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
@@ -112,6 +152,7 @@ public class AutoTest {
     /**
      * 自动模式切换
      * */
+    @Ignore
     @Test
     public void _0010_TC_SETUP_0009_autoBrightnessModeCheck() throws Exception {
         Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
@@ -336,8 +377,9 @@ public class AutoTest {
         Actions.btNameCheck();
     }
     /**
-     * 蓝牙名称检查
+     * 蓝牙开关检查
      * */
+    @Ignore
     @Test
     public void _0034_TC_SETUP_0047_btSwitchCheck() throws Exception {
         Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
@@ -345,7 +387,7 @@ public class AutoTest {
         Actions.btSwitchCheck();
     }
     /**
-     * 蓝牙自动连接检查
+     * 蓝牙自动连接检查,需求已改，待修改
      * */
     @Test
     public void _0035_TC_SETUP_0048_btAutoConnectSwitchCheck() throws Exception {
