@@ -109,14 +109,14 @@ public class Actions {
         UiObject targetObj;
         if (navTo.equals("Home")){
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/os_number"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert go back home", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Radio")){
             amActivity("com.desay_svautomotive.svradio/.RadioMainActivity");
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.desay_svautomotive.svradio:id/radio_type_fm"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert go to Radiot", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Media")){
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.desaysv_automotive.svmedia:id/tv_title"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert go to Media", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Phone")){
 //            targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.desay_svautomotive.svradio:id/radio_number"));
 //            assertEquals(true, targetObj.waitForExists(3000));
@@ -128,11 +128,11 @@ public class Actions {
 //            assertEquals(true, targetObj.waitForExists(3000));
         } else if (navTo.equals("AppList")){
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.launcher:id/app_icon"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert go to AppList", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Settings")){//1030,670    220,670
             amActivity("com.android.settings/com.desaysv.hmi.SvSettings");
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab"));
-            assertEquals("assert into Settings", true, targetObj.waitForExists(3000));
+            assertEquals("assert goto Settings", true, targetObj.waitForExists(3000));
         }
     }
 
@@ -149,31 +149,31 @@ public class Actions {
         if (witchTab.equals(WIFI_TAB_SETTINGS)) {
             mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab_wifi_id")).click();
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_content"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert goto wifiSetting", true, targetObj.waitForExists(3000));
         } else if (witchTab.equals(BT_TAB_SETTINGS)){
             mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab_bluetooth_id")).click();
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/bt_power_switch"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert goto btSetting", true, targetObj.waitForExists(3000));
         } else if (witchTab.equals(TIME_TAB_SETTINGS)){
             mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab_time_id")).click();
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab_12"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert goto timeSetting",true, targetObj.waitForExists(3000));
         } else if (witchTab.equals(DISPLAY_TAB_SETTINGS)){
             mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab_display_id")).click();
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_raw_driveclock"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert goto displaySetting",true, targetObj.waitForExists(3000));
         } else if (witchTab.equals(SOUND_TAB_SETTINGS)){
             mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab_sound_id")).click();
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sound_effects"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert goto soundSetting",true, targetObj.waitForExists(3000));
         } else if (witchTab.equals(VOICE_TAB_SETTINGS)){
             mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab_voice_id")).click();
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/wakeup_switch"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert goto voiceSetting",true, targetObj.waitForExists(3000));
         }else if (witchTab.equals(SYSTEM_TAB_SETTINGS)){
             mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab_system_id")).click();
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/layout_system_message"));
-            assertEquals(true, targetObj.waitForExists(3000));
+            assertEquals("assert goto systemSetting",true, targetObj.waitForExists(3000));
         }
     }
 
@@ -231,7 +231,7 @@ public class Actions {
         settingsItem.scrollToBeginning(5);
         UiObject connectStatusObj = mUiDevice.findObject(new UiSelector()
                 .resourceId("com.android.settings:id/wifi_list_item_desc"));
-        assertEquals(true, connectStatusObj.waitForExists(5000));
+        assertEquals("assert wifi connect ok ",true, connectStatusObj.waitForExists(5000));
     }
     public static void connectWifiNoPassword(String wifiNameStr) throws Exception {
 //        UiAutoLibs.scrollClassFindObjectByText("android.widget.ScrollView", wifiNameStr);
@@ -1843,7 +1843,7 @@ public class Actions {
         if (dtsSwtichObj.isChecked()) {
             UiAutoLibs.clickById("com.android.settings:id/DTCS_sound");
         }
-        assertEquals("assert 15km selected", false,
+        assertEquals("assert DTCS is ON", false,
                 UiAutoLibs.isCheckById("com.android.settings:id/DTCS_sound"));
 
         //声场默认值
@@ -2071,14 +2071,14 @@ public class Actions {
         UiObject valueObj = UiAutoLibs.getUiobjectById("com.android.settings:id/vr_number");
         Log.d(TAG, "vrVolumeSettings: default Value=" + valueObj.getText());
 
-        UiAutoLibs.clickSeekBar(10, 1, seekOjb);
+        UiAutoLibs.clickSeekBar(39, 1, seekOjb);
         assertEquals("assert vrVolume after set 0", "0", valueObj.getText());
 
-        UiAutoLibs.clickSeekBar(10, 10, seekOjb);
-        assertEquals("assert vrVolume after set 10", "10", valueObj.getText());
+        UiAutoLibs.clickSeekBar(39, 39, seekOjb);
+        assertEquals("assert vrVolume after set 39", "39", valueObj.getText());
 
-        UiAutoLibs.clickSeekBar(10, 6, seekOjb);
-        assertEquals("assert vrVolume after set 6", "6", valueObj.getText());
+        UiAutoLibs.clickSeekBar(39, 11, seekOjb);
+        assertEquals("assert vrVolume after set 10", "10", valueObj.getText());
     }
 
     public static void phoneVolumeSettings() throws UiObjectNotFoundException {
@@ -2091,12 +2091,15 @@ public class Actions {
         Log.d(TAG, "phoneVolumeSettings: default Value=" + valueObj.getText());
 
         UiAutoLibs.clickSeekBar(39, 1, seekOjb);
-        assertEquals("assert phoneVolume after set 0", "0", valueObj.getText());
+        Log.d(TAG, "phoneVolumeSettings: set phoneVolume 0 = " + seekOjb.getText());
+        assertEquals("assert phoneVolume = 5 after set 1", "5", valueObj.getText());
 
         UiAutoLibs.clickSeekBar(39, 39, seekOjb);
+        Log.d(TAG, "phoneVolumeSettings: set phoneVolume 39 = " + seekOjb.getText());
         assertEquals("assert phoneVolume after set 39", "39", valueObj.getText());
 
         UiAutoLibs.clickSeekBar(39, 11, seekOjb);
+        Log.d(TAG, "phoneVolumeSettings: set phoneVolume 10 = " + seekOjb.getText());
         assertEquals("assert phoneVolume after set 10", "10", valueObj.getText());
     }
 
@@ -2145,13 +2148,13 @@ public class Actions {
         UiObject valueObj = UiAutoLibs.getUiobjectById("com.android.settings:id/alarm_number");
         Log.d(TAG, "alarmVolumeSettings: default Value=" + valueObj.getText());
 
-        UiAutoLibs.clickSeekBar(10, 1, seekOjb);
+        UiAutoLibs.clickSeekBar(15, 1, seekOjb);
         assertEquals("assert alarmVolume after set 5", "5", valueObj.getText());
 
-        UiAutoLibs.clickSeekBar(10, 10, seekOjb);
+        UiAutoLibs.clickSeekBar(15, 15, seekOjb);
         assertEquals("assert alarmVolume after set 15", "15", valueObj.getText());
 
-        UiAutoLibs.clickSeekBar(10, 6, seekOjb);
+        UiAutoLibs.clickSeekBar(15, 10, seekOjb);
         assertEquals("assert alarmVolume after set 10", "10", valueObj.getText());
     }
 
@@ -2638,7 +2641,7 @@ public class Actions {
     }
 
     public static void voicePronunciationPeopleCheck() throws UiObjectNotFoundException {
-        UiAutoLibs.scrollIdFindObjectById("com.android.settings:id/scrollview", "com.android.settings:id/voice_person");
+        UiAutoLibs.scrollIdFindObjectById("com.android.settings:id/scrollview", "com.android.settings:id/speaker_name");
         UiObject peopleSelectedObj = UiAutoLibs.getUiobjectById("com.android.settings:id/speaker_name");
         String defaultPeopleStr = peopleSelectedObj.getText();
         Log.d(TAG, "voicePronunciationPeopleCheck: default people默认人名 = " + defaultPeopleStr);
