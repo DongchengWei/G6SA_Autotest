@@ -6,7 +6,14 @@ import android.os.Bundle;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.test.uiautomator.UiDevice;
+import android.support.test.uiautomator.UiObject;
+import android.support.test.uiautomator.UiObjectNotFoundException;
+import android.support.test.uiautomator.UiSelector;
+import android.support.test.uiautomator.UiWatcher;
+import android.util.Log;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -24,45 +31,54 @@ public class AutoTest {
     public static Context appContext = InstrumentationRegistry.getTargetContext();
     public static Bundle bundle = InstrumentationRegistry.getArguments();//获取参数
 
-//    @Before
-//    public void setUp(){
-//        mUiDevice.registerWatcher("crashHomeWatch", crashHomeWatch);
-//        Log.d(TAG, "setUp: registerWatcher");
-//    }
-//
-//    @After
-//    public void tearDown() {
-//        mUiDevice.removeWatcher("crashHomeWatch");
-//        Log.d(TAG, "tearDown: removeWatcher");
-//    }
-//
-//    private final UiWatcher crashHomeWatch = new UiWatcher() {
-//        public boolean checkForCondition() {
-//            UiObject appsObj = mUiDevice.findObject(new UiSelector().description("Apps"));
-//            UiObject appsChObj = mUiDevice.findObject(new UiSelector().description("应用"));
-//            UiObject cancelObj = mUiDevice.findObject(new UiSelector().textContains("取消"));
-//            if (appsObj.exists() || appsChObj.exists()) {
-//                Log.d(TAG, "checkForCondition: Crash to home");
-//                Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
-//                try {
-//                    Actions.intoSettingsTab(Actions.WIFI_TAB_SETTINGS);
-//                } catch (UiObjectNotFoundException e) {
-//                    e.printStackTrace();
-//                }
-//                return true;
-//            } else if (cancelObj.exists()){
-//                Log.d(TAG, "checkForCondition: cancelButtonExists");
-//                try {
-//                    cancelObj.click();
-//                } catch (UiObjectNotFoundException e) {
-//                    e.printStackTrace();
-//                }
-//                return true;
-//            } else {
-//                return false;
-//            }
-//        }
-//    };
+    @BeforeClass
+    public static void setUp(){
+        mUiDevice.registerWatcher("crashHomeWatch", crashHomeWatch);
+        Log.d(TAG, "setUp: registerWatcher");
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        mUiDevice.removeWatcher("crashHomeWatch");
+        Log.d(TAG, "tearDown: removeWatcher");
+    }
+
+    private final static UiWatcher crashHomeWatch = new UiWatcher() {
+        public boolean checkForCondition() {
+            UiObject appsObj = mUiDevice.findObject(new UiSelector().description("Apps"));
+            UiObject appsChObj = mUiDevice.findObject(new UiSelector().description("应用"));
+            UiObject cancelObj = mUiDevice.findObject(new UiSelector().textContains("取消"));
+            UiObject cancelEnObj = mUiDevice.findObject(new UiSelector().textContains("Cancel"));
+            if (appsObj.exists() || appsChObj.exists()) {
+                Log.d(TAG, "checkForCondition: Crash to home");
+                try {
+                    Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+                } catch (UiObjectNotFoundException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    Actions.intoSettingsTab(Actions.WIFI_TAB_SETTINGS);
+                } catch (UiObjectNotFoundException e) {
+                    e.printStackTrace();
+                }
+                return true;
+            } else if (cancelObj.exists()){
+                Log.d(TAG, "checkForCondition: cancelButtonExists");
+                while (cancelObj.exists()){
+                    mUiDevice.pressBack();
+                }
+                return true;
+            } else if (cancelEnObj.exists()){
+                Log.d(TAG, "checkForCondition: cancelEnObj");
+                while (cancelEnObj.exists()){
+                    mUiDevice.pressBack();
+                }
+                return true;
+            } else {
+                return false;
+            }
+        }
+    };
     /**
      * 时间制式检查，是否有12小时和24小时制
      * */
@@ -592,6 +608,17 @@ public class AutoTest {
         Actions.turnOnWifi(5);
         Actions.disconnectWifi();
         Actions.wifiPasswordWidthCheck("mobile");
+    }
+    /**
+     * wifi连接记忆网络
+     * */
+    @Test
+    public void _0056_TC_SETUP_0066_wifiConnectMemorySSID() throws Exception {
+        Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+        Actions.intoSettingsTab(Actions.WIFI_TAB_SETTINGS);
+        Actions.turnOnWifi(5);
+        Actions.disconnectWifiAll();
+        Actions.wifiConnectMemorySSID("mobile", "guest");
     }
 
 }

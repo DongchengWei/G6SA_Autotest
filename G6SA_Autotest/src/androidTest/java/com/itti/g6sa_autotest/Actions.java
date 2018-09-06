@@ -101,7 +101,7 @@ public class Actions {
      * 导航栏点击到系统某应用
      * @throws Exception
      */
-    public static void navigateBarTo(String navTo) {
+    public static void navigateBarTo(String navTo) throws UiObjectNotFoundException{
 
 //        String navTo = bundle.getString("NavTo");
         mUiDevice.pressHome();
@@ -109,13 +109,17 @@ public class Actions {
         UiObject targetObj;
         if (navTo.equals("Home")){
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/os_number"));
+            targetObj.getText();
             assertEquals("assert go back home", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Radio")){
             amActivity("com.desay_svautomotive.svradio/.RadioMainActivity");
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.desay_svautomotive.svradio:id/radio_type_fm"));
+            targetObj.getText();
             assertEquals("assert go to Radiot", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Media")){
+            amActivity("com.desaysv_automotive.svmedia/.MainActivity");
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.desaysv_automotive.svmedia:id/tv_title"));
+            targetObj.getText();
             assertEquals("assert go to Media", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Phone")){
 //            targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.desay_svautomotive.svradio:id/radio_number"));
@@ -132,6 +136,7 @@ public class Actions {
         } else if (navTo.equals("Settings")){//1030,670    220,670
             amActivity("com.android.settings/com.desaysv.hmi.SvSettings");
             targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/sv_tab"));
+            targetObj.getText();
             assertEquals("assert goto Settings", true, targetObj.waitForExists(3000));
         }
     }
@@ -207,12 +212,39 @@ public class Actions {
     }
 
     /**
+     * @throws Exception
+     */
+    public static void disconnectWifiAll() throws UiObjectNotFoundException {
+        UiScrollable settingsItem = new UiScrollable(new UiSelector()
+                .className("android.widget.ScrollView"));
+
+        settingsItem.scrollToBeginning(50);
+        UiObject statusObj = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/wifi_list_item_desc"));
+        while (statusObj.waitForExists(5000)){
+            statusObj.click();
+            UiObject unsaveBtn = mUiDevice.findObject(new UiSelector().resourceId("com.android.settings:id/dialog_forget"));
+            if (unsaveBtn.waitForExists(3000) && unsaveBtn.isEnabled()) {
+                unsaveBtn.click();
+            }
+            Log.d(TAG, "disconnectWifi: wifi是连接的，正在断开。。。");
+        }
+
+        UiScrollable scrollViewScr = new UiScrollable(new UiSelector()
+                .className("android.widget.ScrollView"));
+        UiObject wifiObj = scrollViewScr.getChildByText(new UiSelector()
+                .className("android.widget.TextView"), "WIFI");
+        UiObject connectObj = mUiDevice.findObject(new UiSelector()
+                .resourceId("com.android.settings:id/wifi_list_item_desc"));
+        assertEquals(false, connectObj.exists());
+    }
+
+    /**
      * 连接某个wifi热点
      * @param wifiNameStr     wifi名称
      * @param wifiPasswordStr wifi密码
      * @throws Exception
      */
-    public static void connectWifi(String wifiNameStr, String wifiPasswordStr) throws Exception {
+    public static void connectWifi(String wifiNameStr, String wifiPasswordStr) throws UiObjectNotFoundException {
 //        UiAutoLibs.scrollClassFindObjectByText("android.widget.ScrollView", wifiNameStr);
 
         UiScrollable settingsItem = new UiScrollable(new UiSelector()
@@ -233,7 +265,7 @@ public class Actions {
                 .resourceId("com.android.settings:id/wifi_list_item_desc"));
         assertEquals("assert wifi connect ok ",true, connectStatusObj.waitForExists(5000));
     }
-    public static void connectWifiNoPassword(String wifiNameStr) throws Exception {
+    public static void connectWifiNoPassword(String wifiNameStr) throws UiObjectNotFoundException {
 //        UiAutoLibs.scrollClassFindObjectByText("android.widget.ScrollView", wifiNameStr);
         boolean isOk = false;
 
@@ -241,7 +273,8 @@ public class Actions {
                 .className("android.widget.ScrollView"));
         UiObject about = settingsItem.getChildByText(new UiSelector()
                 .className("android.widget.TextView"), wifiNameStr);
-        about.click();
+        about.click();//点击该wifi名称连接
+        Log.d(TAG, "connectWifiNoPassword: child = " + about.getFromParent(new UiSelector().resourceId("com.android.settings:id/wifi_list_item_desc")).getText());
 
         settingsItem.scrollToBeginning(5);
         UiObject connectStatusObj = mUiDevice.findObject(new UiSelector()
@@ -2819,10 +2852,11 @@ public class Actions {
         UiObject confirmBtnObj = UiAutoLibs.getUiobjectById("com.android.settings:id/wifi_con_dialog_confirm");
         boolean isOk = false;
         Log.d(TAG, "wifiPasswordWidthCheck: null = " + passwordEditObj.getText());
-        if (passwordEditObj.getText().equals("请输入密码") && !confirmBtnObj.isEnabled()){
+        passwordEditObj.setText(passwordEditObj.getText());
+        if (!confirmBtnObj.isEnabled()){
             isOk = true;
         }
-        assertEquals("assert password null", true, isOk);
+        assertEquals("assert password null but " + passwordEditObj.getText(), true, isOk);
 
         passwordEditObj.setText("1234567");
         isOk = false;
@@ -2864,7 +2898,12 @@ public class Actions {
 
         UiAutoLibs.clickById("com.android.settings:id/wifi_con_dialog_concel");
         assertEquals("assert password dialog dismiss", true, confirmBtnObj.waitUntilGone(3000));
+    }
 
+    public static void wifiConnectMemorySSID(String saveSsid, String switchSsid) throws UiObjectNotFoundException {
+        connectWifi("mobile", "sv2655888");
+        connectWifiNoPassword("guest");
+        connectWifiNoPassword("mobile");
     }
 }
 

@@ -52,7 +52,11 @@ public class G6SA_Pressure {
             UiObject appsChObj = mUiDevice.findObject(new UiSelector().description("应用"));
             if (appsObj.exists() || appsChObj.exists()) {
                 Log.d(TAG, "checkForCondition: Crash to home");
-                Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+                try {
+                    Actions.navigateBarTo(Actions.SETTINGS_NAVBAR);
+                } catch (UiObjectNotFoundException e) {
+                    e.printStackTrace();
+                }
                 try {
                     Actions.intoSettingsTab(Actions.BT_TAB_SETTINGS);
                 } catch (UiObjectNotFoundException e) {
