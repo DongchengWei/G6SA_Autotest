@@ -7,7 +7,6 @@ import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.test.uiautomator.UiDevice;
 
-import com.itti.g6sa_autotest.Actions;
 import com.itti.g6sa_autotest.ActionsPackages.MediaActions;
 
 import org.junit.FixMethodOrder;

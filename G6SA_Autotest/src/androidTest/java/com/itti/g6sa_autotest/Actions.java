@@ -118,7 +118,7 @@ public class Actions {
             assertEquals("assert go to Radiot", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Media")){
             amActivity("com.desaysv_automotive.svmedia/.MainActivity");
-            targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.desaysv_automotive.svmedia:id/tv_title"));
+            targetObj = mUiDevice.findObject(new UiSelector().resourceId("com.desaysv_automotive.svmedia:id/tv_music_hall"));
             targetObj.getText();
             assertEquals("assert go to Media", true, targetObj.waitForExists(3000));
         } else if (navTo.equals("Phone")){
